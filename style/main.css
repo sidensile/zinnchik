@@ -38,7 +38,7 @@
         font-style: normal; 
         font-size: 500%;
         position: absolute;
-        top: 85%;
+        top: 95%;
         color: rgba(255, 255, 255, 0.678);
         font-size: calc(1em + 6vw);
     }
@@ -146,13 +146,13 @@
         font-style: normal; 
         font-size: 500%;
         position: absolute;
-        top: 65%;
+        top: 75%;
         color: rgba(255, 255, 255, 0.678);
         font-size: calc(1em + 6vw);
     }
     #imgMain2{
         width: 100%; 
-        opacity: 85%;
+        opacity: 75%;
         transition:all 0.3s ease;
     }
     #imgMain2:hover{
