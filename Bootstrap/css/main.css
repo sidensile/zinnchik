@@ -64,7 +64,7 @@ a:hover, a:focus{
     background-color: #cc3d19;
 }
 
-#headerwrap, #headerwrap-catalog{
+#headerwrap{
     background: url(../../img/header-bg.jpeg) no-repeat center top;
     margin-top: -100px;
     padding-top: 20px;
@@ -84,7 +84,22 @@ a:hover, a:focus{
 }
 
 #headerwrap-catalog{
-    background: url(../../img/header-bg-catalog.jpg) no-repeat center top;
+    background: url(../../img/header-bg-catalog.jpeg) no-repeat center top;
+    margin-top: -100px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 800px;
+    width:100%;
+    height: 800px;
+
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #headerwrap h1, #headerwrap-catalog h1 {
