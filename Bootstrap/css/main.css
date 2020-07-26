@@ -1,6 +1,10 @@
 /* Импортируем инструменты для работы */
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Montserrat');
 
+*{
+    transition: 0.15s;
+}
+
 body {
     /* Настраиваем стили по-умолчанию */
     background-color: #f2f2f2;
@@ -117,6 +121,7 @@ a:hover, a:focus{
 
 #film1:hover, #film2:hover, #film3:hover{
     opacity: 70%;
+    border: 8px solid rgb(255, 72, 72);
 }
 
 .tilt{
@@ -135,3 +140,26 @@ a:hover, a:focus{
             transform: rotate(-2deg);
 }
 
+#name1, #name2, #name3{
+    font-weight: 800;
+}
+
+#footer{
+    background-color: rgb(126, 126, 126);
+}
+
+.ft{
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.ft > .logo > h1{
+    font-family: "Montserrat";
+    color: white;
+    text-align: center;
+}
+
+.ft > .information > h5{
+    font-family: "Montserrat";
+    color: white;
+}
