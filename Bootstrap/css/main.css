@@ -125,7 +125,7 @@ a:hover, a:focus{
 
 #film1:hover, #film2:hover, #film3:hover{
     opacity: 70%;
-    border: 8px solid rgb(255, 72, 72);
+    border: 8px solid rgba(255, 255, 255, 0);
 }
 
 .tilt{
