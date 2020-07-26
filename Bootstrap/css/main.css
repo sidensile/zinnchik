@@ -163,3 +163,11 @@ a:hover, a:focus{
     font-family: "Montserrat";
     color: white;
 }
+
+.hidden{
+    opacity:0;
+    }
+
+.visible{
+    opacity:1;
+}
