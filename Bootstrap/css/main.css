@@ -1,0 +1,133 @@
+/* Импортируем инструменты для работы */
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body {
+    /* Настраиваем стили по-умолчанию */
+    background-color: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    margin-top: 70px;
+
+    /* Добавляем webkit */
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6{
+    /* Задаём стили заголовкам */
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+} 
+
+p{
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered{
+    text-align: center;
+}
+
+a{
+    color: #f85c37;
+}
+
+a:hover, a:focus{
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+.navbar{
+    font-weight: 800;
+    font-family: "Raleway";
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: #f85c37;
+}
+.navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #cc3d19;
+}
+
+#headerwrap{
+    background: url(../../img/header-bg.jpeg) no-repeat center top;
+    margin-top: -20px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 700px;
+    width:100%;
+
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#headerwrap h1 {
+    margin-top: 100px;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+}
+#headerwrap h3 {
+    margin-top: 100px;
+    color: white;
+    font-weight: 1000;
+    text-transform: uppercase;
+}
+
+.w{
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+#dg{
+    background: #e0e0e0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    transition:all 0.3s ease;
+}
+
+#dg h3{
+    font-size: 40px;
+    font-weight: 550;
+}
+
+#film1, #film2, #film3{
+    border-radius: 10px;
+    width: 300px;
+}
+
+#film1:hover, #film2:hover, #film3:hover{
+    opacity: 70%;
+}
+
+.tilt{
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.tilt:hover{
+    -webkit-transform: rotate(-10deg);
+       -moz-transform: rotate(-10deg);
+         -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+}

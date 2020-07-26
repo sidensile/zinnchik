@@ -1,39 +1,88 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Автор - Иван Курбаков (14 лет) -->
-        <!-- Здравствуйте, если вы тут - значит вы решили отредактировать код страницы, чего я вам не советую. Тут ничего интересного нет, а с помощью js вы не сможете ничего исправить. 
-        Это потому что у нас всё или почти все функции сайта бесплатные. СПС за внимание ;) -->
-        <title>ZINNCHICK Online (BETA)</title>
-        <meta name="viewport" content="Онлайн-кинотеатр.">
-        <link rel="stylesheet" href="style/main.css">
-        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-        <link rel="canonical" href="https://sidensile.github.io/zinnchik/" />
         <meta charset="utf-8">
-        <meta name="keywords" content="Online, Онлайн-Кинотеатр, кинотеатр, смотреть фильмы онлайн, фантастика, кино онлайн, кинопоиск, скачать фильмы онлайн" />
+        <meta name="vievport" content="width=device-width, initial=scale-1.0">
+        <title>
+            Смотрите фильмы онлайн в отличном качестве - Кинотеатр Zinnchik!
+        </title>
+        <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="Bootstrap/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Bootstrap/css/main.css">
     </head>
     <body>
-        <div>
-            <div>
-                <ul class="menu-main">
-                    <li><a href="./index.html" class="current">Главная Страница</a></li>
-                    <li><a href="./katalog.html">Каталог</a></li>
-                    <li><a href="">log</a></li>
-                </ul>
-            </div>
-            <div onclick="document.location.href = 'Takagi-San/main.html'">
-                <img src="img/Takagi-San bg.jpg" id="imgMain1">
-                <div id="name1">
-                    <h1 id="nameMain1">Поддразнивания Такаги</h1>
-                    <br/><h1 id="nameSeason">Сезон 1</h1>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">ZINNCHIK</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Главная</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Топ-100</a></li>
+                        <li><a href="#">Донат</a></li>
+                    </ul>
                 </div>
             </div>
-            <div onclick="document.location.href = 'Pet-Semetery/main.html'">
-                <img src="img/pet-semetery bg.jpg" id="imgMain2">
-                <div>
-                    <h1 id="nameMain2">Кладбище Домашних Животных</h1>
+        </div>   
+        <div id="headerwrap">
+            <div class="container">
+                <div class="row centered">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1>ZINNCHIK</h1>
+                        <h3>онлайн-кинотеатр, достойный вашего внимания!</h3>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="container w">
+            <div class="row centered">
+                <br><br>
+                <div class="col-lg-4 col-lg-offset-4">
+                    <i class="fa fa-window-minimize"></i>
+                    <h4>Сайт на стадии разработки, поэтому полный функционал ещё не доступен.</h4>
                 </div>
             </div>
         </div>
+
+        <div id="dg">
+            <div class="container">
+                <div class="row center">
+                    <h3>Фильмы</h3>
+                    <br>
+                    <div class="col-lg-4">
+                        <div class="tilt">
+                            <a href="#"><img src="img/avatar-takagi.jpg" id="film1"></a>
+                            <h4 id="name1">Поддразнивания Такаги</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="tilt">
+                            <a href="#"><img src="img/avatar-takagi.jpg" id="film2"></a>
+                            <h4 id="name2">Поддразнивания Такаги</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="tilt">
+                            <a href="#"><img src="img/avatar-takagi.jpg" id="film3"></a>
+                            <h4 id="name3">Поддразнивания Такаги</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="Bootstrap/js/bootstrap.js"></script>
     </body>
 </html>
