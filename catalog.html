@@ -11,6 +11,7 @@
         </title>
         <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="./Bootstrap/css/main.css">
+        <script src="scripts/playerjs.js"></script>
     </head>
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -61,10 +62,36 @@
                     <h3>Аниме</h3>
                     <br>
                     <div class="col-lg-4">
-                        <div class="tilt">
-                            <a href="#"><img src="./img/avatar-takagi.jpg" id="film1"></a>
+                        <div class="tilt" onclick="predWtch()">
+                            <a><img src="./img/avatar-takagi.jpg" id="film1"></a>
                             <h4 id="name1">Поддразнивания Такаги</h4>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="filmMini" class="hidden filmmini">
+            <div class="container">
+                <div>
+                    <div id="headerwrap-film" class="predwtch">
+                        <document>
+                            <div class="row centered">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <h1>**ПРЕДПРОСМОТР**</h1>
+                                    <h1 id="namePred">Поддразнивания Такаги</h1>
+                                    <h3 id="infoPred">Такаги-Сан очень любит дразнить своего друга Нишикато, но он даже не подозревает зачем это...</h3>
+                                    <br><br><br>
+                                    <div id="player"></div>
+
+                                    <script>
+                                        var player = new Playerjs({id:"player", file:"video.mp4"});
+                                    </script>
+                                    <br>
+                                    <button type="button" class="btn btn-primary btn-md raleway" style="font-size: 25px;">Перейти на страницу фильма</button>
+                                </div>
+                            </div>
+                        </document>
                     </div>
                 </div>
             </div>
@@ -80,6 +107,21 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            var predwatch = document.getElementById("filmMini");
+
+            function predWtch(){
+                var classVisible = predwatch.getAttribute ("class");
+                if (classVisible == "hidden filmmini"){
+                    predwatch.setAttribute ("class", "visible filmmini")
+                }
+                else if (classVisible == "visible filmmini"){
+                    predwatch.setAttribute ("class", "hidden filmmini")
+                }
+            }
+        </script>
+
 
         <script>
             function informationVisible(){
